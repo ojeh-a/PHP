@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Info</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+
+
+</head>
+<body>
+    <h1>Personal Info
+    </h1>
+
+    <form action="connect.php" method="post">
+        <label for="firstname">First Name</label>
+        <input type="text" id ="firstname" name="firstname">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id ="lastname" name="lastname">
+        <br>
+
+        <label for="email">E-mail</label>
+        <input type="text" id ="email" name="email">
+
+        <label for="number">Phone number</label>
+        <input type="tel" id ="number" name="number" pattern="[0-9]{11}">
+        <br>
+
+        <label for="priority">Gender</label>
+        <select id="priority" name="gender">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+        </select>
+
+        <label for="message">What's on your mind?</label>
+        <textarea id="message" name="message"></textarea>
+
+        <fieldset>
+            <legend>Current Mood</legend>
+
+            <label for="mood1">
+                <input type="radio" id="mood1" name="mood" value="1">
+                Happy
+            </label>
+    
+            <label for="mood2">
+                <input type="radio" id="mood2" name="mood" value="2">
+                Can't complain
+            </label>
+    
+            <label for="mood3">
+                <input type="radio" id="mood3" name="mood" value="3">
+                Sad
+            </label>
+        </fieldset>
+        
+        <label>
+            <input type="checkbox" name="agree">
+            Send my data to mysql
+        </label>
+        <br>
+
+        <button>Submit</button>
+    </form>
+```
+</body>
+</html>
